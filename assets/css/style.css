@@ -3,9 +3,7 @@
 
 
 :root {
-  /**
-   * colors
-   */
+  /*** colors */
    --purple: hsl(261, 26%, 60%);
    --dark-purple: hsl(232, 31%, 24%);
    --mid-purple: hsl(240.8,34%,41%);
@@ -21,7 +19,7 @@
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
   
-  /*** typography*/
+  /*** typography */
   --ff-montserrat:"Montserrat", sans-serif;
   --ff--barlow: "Barlow", sans-serif;
   --ff-roboto: "Roboto", sans-serif;
@@ -44,14 +42,14 @@
   --fw-800: 800;
   --fw-900: 900;
 
-  /*** transition*/
+  /*** transition */
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
-  /*** spacing*/
+  /*** spacing */
 
   --section-padding: 60px;
 }
@@ -2141,6 +2139,7 @@ input[type="submit"]:hover {
   display: grid;
   grid-template-columns: repeat(6,1fr);
   gap: 10px;
+  color: var(--black);
 }
 
  .panduan-ukuran {
@@ -2153,6 +2152,7 @@ input[type="submit"]:hover {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
 .number-size button:hover{
   border-color: var(--black);
   padding: 10px;
@@ -2658,7 +2658,7 @@ th:last-child{
 
   .special-banner {
     background-size: contain;
-    height: 500px;
+    height: 510px;
   } 
 
   .subscribe-text {
@@ -2719,7 +2719,7 @@ th:last-child{
 
   .navigation li {
     display: inline-block;
-    font-size: var(--fs-8);
+    font-size: var(--fs-7);
   }
   .navigation a {
     font-size: var(--fs-7);
@@ -2812,7 +2812,7 @@ th:last-child{
     margin-bottom: 40px;
 }
 .insta-post-list .insta-post-item {
-  min-width: 30%;
+  min-width: 25%;
 }
 
 .buttons-3{
@@ -2823,13 +2823,12 @@ th:last-child{
   display: grid;
   grid-template-columns:2fr 1fr;
   gap: 20px;
-  font-size: var(--fs-4);
+  font-size: var(--fs-6);
   margin-bottom: 10px;
 }
 .panduan-ukuran{
   font-size: var(--fs-6)
 }
-
 
 .cta-list p {
     margin-top: 30px;
@@ -2838,5 +2837,19 @@ th:last-child{
     line-height: 1.5;
     text-align: left;
 }
+.number-size {
+  /* grid-template-columns: repeat(4,1fr); */
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+}
 
+.categories-arrival button{
+  color: var(--dark-purple);
+}
+.cta-list h2,.cta-list h4 {
+  font-size: var(--fs-5);
+}
+.cta-list h4 {
+  font-size: var(--fs-5);
+}
 }
