@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAYMENT</title>
+    <title>CART</title>
 
     <!--- custom css link-->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -16,11 +16,11 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-     <!-- Favicon -->
-     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-     <link rel="manifest" href="assets/images/site.webmanifest">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 
 <body id="top">
     <!-- - #HEADER-->
@@ -77,15 +77,15 @@
                             <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
                             <span class="nav-action-text">Search</span>
                             <div id="search-label" class="search-label hidden">
-                              <label for="search-input"></label>
-                              <input type="search" id="search-input" placeholder="Search">
+                                <label for="search-input"></label>
+                                <input type="search" id="search-input" placeholder="Search">
                             </div>
-                          </button>
+                        </button>
                     </li>
 
                     <li>
                         <button id="basket-button" class="nav-action-btn">
-                            <ion-icon  name="bag-outline" aria-hidden="true"></ion-icon>
+                            <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
                             <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
                             <data class="nav-action-badge" value="2" aria-hidden="true">2</data>
                         </button>
@@ -121,8 +121,7 @@
                         <ul>
                             <li><a href="index.html">HOME</a></li>
                             <li>/</li>
-                            <li><a href="brands.html">PAYMENT</a></li>
-                            
+                            <li><a href="shopping-cart.html">CART</a></li>
                         </ul>
                     </div>
                 </div>
@@ -131,95 +130,146 @@
         </section>
 
         <!-- Shopping cart page -->
-        <!-- <section class="shopping section">
-            <div class="shopping-selection">
-                <div class="container">
-                    <div class="shop">
-                        <div class="shop-section">
-                            <ul>
-                                <li>Product</li>
-                                <li>a</li>
-                            </ul>
-                            <ul>
-                                <li>Quantity</li>
-                            </ul>
-                            <ul>
-                                <li>Subtotal</li>
-                            </ul>
-                        </div>
-                        <div class="shop-price">
-                          
-                        </div>
 
-
-                    </div>
-                    
-                </div>
-            </div>
-        </section> -->
 
         <section class="shoppings-section">
             <div class="container">
-                <div id="cart-container" class="shopping-section cart-page">
-                    <table>
-                        <tr>
-                            <th>Product</th> 
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cart-info">
-                                    <img src="assets/images/best-1.png" alt="">
-                                    <div>
-                                        <p>NIKE AIR JORDAN 1 HIGH OG - DARK MOCHA</p>
-                                        <small>Price: $160</small>
-                                        <a href="">Remove</a>
-                                    </div>
+                <div class="shop-cart">
+                    <div class="main-container">
+                        <div class="content-container">
+                            <div class="cart-container">
+                                <div>
+                                    <h3>CART</h3>
                                 </div>
-                            </td>
-                          
-                            <td><input type="number" value="1"></td>
-                            <td>$160</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="cart-info">
-                                    <img src="assets/images/travis-fragment.png" alt="">
-                                    <div>
-                                        <p>NIKE AIR JORDAN 1 LOW TRAVIS SCOTT X FRAGMENT</p>
-                                        <small>Price: $150</small>
-                                        <a href="">Remove</a>
+                                <div class="cart-grid">
+                                    <div class="cart-shop-item">
+                                        <img src="assets/images/adidas.png" alt="Sneaker 1">
+                                        <div class="cart-item-details">
+                                            <h4 class="cart-name">ADIDAS ULTRABOOST LIGHT</h4>
+                                            <p class="product-price">$210</p>
+                                            <div class="size-quantity-container">
+                                                <div class="size-container">
+                                                    <label for="size">Size</label>
+                                                    <select id="size" name="size">
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity-container">
+                                                    <label for="quantity">Quantity</label>
+                                                    <input type="number" id="quantity" name="quantity" value="1"
+                                                        min="1">
+                                                </div>
+                                            </div>
+                                            <div class="icons-container">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="cart-shop-item">
+                                        <img src="assets/images/best-1.png" alt="Sneaker 2">
+                                        <div class="cart-item-details">
+                                            <h4 class="cart-name">NIKE AIR JORDAN 1 HIGH OG - DARK MOCHA</h4>
+                                            <p class="product-price">$160</p>
+                                            <div class="size-quantity-container">
+                                                <div class="size-container">
+                                                    <label for="size">Size</label>
+                                                    <select id="size" name="size">
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity-container">
+                                                    <label for="quantity">Quantity</label>
+                                                    <input type="number" id="quantity" name="quantity" value="1"
+                                                        min="1">
+                                                </div>
+                                            </div>
+                                            <div class="icons-container">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-shop-item">
+                                        <img src="assets/images/vans1.png" alt="Sneaker 2">
+                                        <div class="cart-item-details">
+                                            <h4 class="cart-name">VANS OLD SKOOL</h4>
+                                            <p class="product-price">$70</p>
+                                            <div class="size-quantity-container">
+                                                <div class="size-container">
+                                                    <label for="size">Size</label>
+                                                    <select id="size" name="size">
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                    </select>
+                                                </div>
+                                                <div class="quantity-container">
+                                                    <label for="quantity">Quantity</label>
+                                                    <input type="number" id="quantity" name="quantity" value="1"
+                                                        min="1">
+                                                </div>
+                                            </div>
+                                            <div class="icons-container">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                                <ion-icon name="trash-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shop-link">
+                                        <h4>Favorites</h4>
+                                        <p>Want to view your favorites? &nbsp<a href="sign-up.html">Join us</a>&nbsp; or &nbsp;<a href="login-page.html"> Sign-in</a></p>
+                                    </div>
+                                    <!-- Tambahkan produk lainnya di sini jika diperlukan -->
                                 </div>
-                            </td>
-                          
-                            <td><input type="number" value="1"></td>
-                            <td>$150</td>
-                        </tr>
-                    </table>
-
-                    <div class="total-price">
-                        <table>
-                            <tr>
-                                <td>Subtotal</td>
-                                <td>$310</td>
-                            </tr>
-
-                            <tr>
-                                <td>Tax</td>
-                                <td>$31</td>
-                            </tr>
-
-                            <tr>
-                                <td>total</td>
-                                <td>$341</td>
-                            </tr>
-                        </table>
+                            </div>
+                            <div class="summary-container">
+                                <div class="summary-item">
+                                    <h3>SUMMARY</h3>
+                                </div>
+                                <div class="summary-item">
+                                    <p>Subtotal</p>
+                                    <p class="subtotal-price">$440</p>
+                                </div>
+                                <div class="summary-item">
+                                    <p>Estimated Delivery & Handling</p>
+                                    <p class="subtotal-price">$10</p>
+                                </div>
+                                <div class="summary-item">
+                                    <p>Estimated Duties and Taxes</p>
+                                    <p class="subtotal-price">-</p>
+                                </div>
+                                <div class="summary-item">
+                                    <p>Total</p>
+                                    <p class="total-price">$450</p>
+                                </div>
+                                <button id="checkout-btn" class="checkout">Checkout</button>
+                                <button id="checkout-btn" class="checkout"><ion-icon name="logo-paypal"></ion-icon>Paypal</button>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
                     </div>
-                    <div  class="checkout-button">
-                        <button id="checkout-btn" class="btn btn-primary"><span>CHECK OUT</span></button>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -329,7 +379,7 @@
                                 <span class="footer-link-text">Vans</span>
                             </a>
                         </li>
-                      
+
                     </ul>
 
                     <div class="footer-list">
@@ -377,7 +427,7 @@
 
                             <li>
                                 <a href="https://github.com/yuiawen" class="social-link">
-                                   
+
                                     <ion-icon name="logo-github"></ion-icon>
                                 </a>
                             </li>
@@ -418,9 +468,7 @@
         </div>
     </footer>
 
-    <!-- 
-    - #GO TO TOP
-  -->
+    <!--- #GO TO TOP-->
 
     <a href="#top" class="go-top-btn" data-go-top>
         <ion-icon name="arrow-up-outline"></ion-icon>
