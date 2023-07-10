@@ -178,3 +178,17 @@ checkoutBtn.addEventListener("click", function() {
     popup.remove();
   }, 3000);
 });
+
+//login password visible
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById("passwordInput");
+  var showPassword = document.getElementById("showPassword");
+
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    showPassword.setAttribute("name", "eye-outline");
+  } else {
+    passwordInput.type = "password";
+    showPassword.setAttribute("name", "eye-off-outline");
+  }
+}
