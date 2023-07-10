@@ -2687,6 +2687,8 @@ th:last-child {
   line-height: 1.5;
 }
 
+
+/* Responsive iphone */
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .hero-section {
     display: flex;
