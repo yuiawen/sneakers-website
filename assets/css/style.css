@@ -1274,7 +1274,9 @@ a.footer-link:is(:hover, :focus) {
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
-/*** responsive for larger than 575px screen */
+/**
+ * responsive for larger than 575px screen
+ */
 
 @media (min-width: 575px) {
   /**
@@ -1289,7 +1291,9 @@ a.footer-link:is(:hover, :focus) {
     --fs-1: 4rem;
   }
 
-  /*** REUSED STYLE */
+  /**
+   * REUSED STYLE
+   */
 
   .container {
     max-width: 650px;
@@ -1301,19 +1305,25 @@ a.footer-link:is(:hover, :focus) {
     min-width: calc(50% - 12.5px);
   }
 
-  /*** HERO */
+  /**
+   * HERO
+   */
 
   .hero-text {
     font-size: var(--fs-7);
   }
 
-  /*** PRODUCTS */
+  /**
+   * PRODUCTS
+   */
 
   .product-list {
     grid-template-columns: 1fr 1fr;
   }
 
-  /*** CTA */
+  /**
+   * CTA
+   */
 
   .cta-card {
     text-align: left;
@@ -1327,13 +1337,17 @@ a.footer-link:is(:hover, :focus) {
     margin-inline: 0;
   }
 
-  /*** INSTA POST */
+  /**
+   * INSTA POST
+   */
 
   .insta-post-list .insta-post-item {
     min-width: 25%;
   }
 
-  /*** FOOTER */
+  /**
+   * FOOTER
+   */
 
   .footer-brand .logo {
     margin-bottom: 0;
@@ -1352,7 +1366,9 @@ a.footer-link:is(:hover, :focus) {
   }
 }
 
-/*** responsive for larger than 768px screen */
+/**
+ * responsive for larger than 768px screen
+ */
 
 @media (min-width: 768px) {
   /**
@@ -1458,7 +1474,9 @@ a.footer-link:is(:hover, :focus) {
     min-width: calc(33.33% - 16.66px);
   }
 
-  /*** HEADER */
+  /**
+   * HEADER
+   */
 
   .nav-open-btn,
   .nav-close-btn,
@@ -1521,19 +1539,25 @@ a.footer-link:is(:hover, :focus) {
     right: -12px;
   }
 
-  /*** HERO */
+  /**
+   * HERO
+   */
 
   .hero {
     height: 480px;
   }
 
-  /*** PRODUCTS */
+  /**
+   * PRODUCTS
+   */
 
   .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /*** CTA */
+  /**
+   * CTA
+   */
 
   .cta-list {
     grid-template-columns: 1fr 1fr;
@@ -1544,7 +1568,9 @@ a.footer-link:is(:hover, :focus) {
     padding-inline: 50px;
   }
 
-  /*** SPECIAL */
+  /**
+   * SPECIAL
+   */
 
   .special-banner {
     min-width: calc(33.33% - 25px);
@@ -1558,32 +1584,44 @@ a.footer-link:is(:hover, :focus) {
     min-width: calc(50% - 12.5px);
   }
 
-  /*** INSTA POST */
+  /**
+   * INSTA POST
+   */
 
   .insta-post-list .insta-post-item {
     min-width: 16.666%;
   }
 }
 
-/*** responsive for larger than 1200px screen */
+/**
+ * responsive for larger than 1200px screen
+ */
 
 @media (min-width: 1200px) {
-  /*** CUSTOM PROPERTY */
+  /**
+   * CUSTOM PROPERTY
+   */
 
   :root {
-    /*** typography */
+    /**
+     * typography
+     */
 
     --fs-1: 5rem;
     --fs-2: 3.6rem;
   }
 
-  /*** REUSED STYLE*/
+  /**
+   * REUSED STYLE
+   */
 
   .container {
     max-width: 1280px;
   }
 
-  /*** HERO*/
+  /**
+   * HERO
+   */
 
   .hero {
     height: 580px;
@@ -1598,13 +1636,17 @@ a.footer-link:is(:hover, :focus) {
     max-width: 50ch;
   }
 
-  /*** PRODUCTS*/
+  /**
+   * PRODUCTS
+   */
 
   .product-list {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  /*** SPECIAL*/
+  /**
+   * SPECIAL
+   */
 
   .special-banner {
     min-width: calc(25% - 25px);
@@ -1618,7 +1660,9 @@ a.footer-link:is(:hover, :focus) {
     --fs-4: 2.4rem;
   }
 
-  /*** SERVICE */
+  /**
+   * SERVICE
+   */
 
   .service-item {
     width: 275px;
@@ -1633,7 +1677,9 @@ a.footer-link:is(:hover, :focus) {
     --fs-6: 2rem;
   }
 
-  /*** INSTA POST*/
+  /**
+   * INSTA POST
+   */
 
   .insta-post {
     padding-block-end: 0;
@@ -1647,7 +1693,9 @@ a.footer-link:is(:hover, :focus) {
     padding: 10px 0px 10px;
   }
 
-  /*** FOOTER */
+  /**
+   * FOOTER
+   */
 
   .footer-link-box {
     grid-template-columns: repeat(5, 1fr);
@@ -2639,8 +2687,6 @@ th:last-child {
   line-height: 1.5;
 }
 
-/* Responsive for iphone */
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (orientation: portrait) {
   .hero-section {
     display: flex;
@@ -2689,12 +2735,25 @@ th:last-child {
     font-size: var(--fs-8);
   }
 
-  .swiper-slide .card-cat {
-    font-size: var(--fs-9);
+  .swiper-slide .card-cat-link {
+    font-size: var(--fs-8);
   }
 
   .swiper-slide h3 {
     font-size: var(--fs-7);
+  }
+  .swiper-slide .card-price {
+    font-size: var(--fs-8);
+  }
+
+  .special-section .card-content{
+    font-size: var(--fs-8);
+  }
+  .special-section .card-cat{
+    font-size: var(--fs-9);
+  }
+  .special-section .card-title{
+    font-size: var(--fs-8);
   }
 
 
@@ -2706,15 +2765,20 @@ th:last-child {
   .button-story.btn-primary {
     display: inline-block;
     font-family: var(--ff-montserrat);
-    font-size: 16px;
+    font-size: var(--fs-7);
     font-weight: var(--fw-500);
     padding: 5px 10px;
     margin-left: 10px;
   }
 
-
-  .story-content,
-  .story-title {
+  .story-title{
+    text-align: left;
+    color: var(--white);
+    text-shadow: 1px 1px 0px var(--purple);
+    font-size: var(--fs-3);
+  }
+  .story-content
+  {
     text-align: left;
     color: var(--white);
     text-shadow: 1px 1px 0px var(--purple);
@@ -2724,7 +2788,7 @@ th:last-child {
 
   .special-banner {
     background-size: contain;
-    height: 510px;
+    height: 540px;
   }
 
   .subscribe-text {
