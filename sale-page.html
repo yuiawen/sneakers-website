@@ -147,42 +147,132 @@
 
                         <div class="categories-arrival">
                             <div>
+                              <div class="categories-btn">
                                 <button id="sort-toggle">SORT</button>
-                                <div id="sort-options" class="options">
-                                    <button>Default</button>
-                                    <button>Price</button>
-                                    <button>Rating</button>
-                                </div>
+                                <ion-icon id="sort-add-category" name="add-outline"></ion-icon>
+                              </div>
+                              <div id="sort-options" class="options">
+                                <ul class="filter-category">
+                                    <select name="" id="sort-available">
+                                        <option value="title-ascending" selected="selected">Alphabetically, A-Z</option>
+                                        <option value="price-ascending">Price, low to high</option>
+                                        <option value="price-descending">Price, high to low</option>
+                                        <option value="created-ascending">Date, old to new</option>
+                                        <option value="created-descending">Date, new to old</option>
+                                      </select>
+                                </ul>
+                                
+                              </div>
                             </div>
                             <div>
+                              <div class="categories-btn">
                                 <button id="categories-toggle">CATEGORIES</button>
-                                <div id="categories-options" class="options">
-                                    <button>All</button>
-                                    <button>Clothing</button>
-                                    <button>Shoes</button>
-                                    <button>Accessories</button>
-                                </div>
+                                <ion-icon id="categories-add-category" name="add-outline"></ion-icon>
+                              </div>
+                              <div id="categories-options" class="options">
+                                <ul class="filter-category">
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-new-arrivals">                                    
+                                    <a href="new-arrival-page.html">NEW ARRIVALS</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-men">
+                                    <a href="men-page.html" title="">MEN</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-women">
+                                    <a href="women-page.html" >WOMEN</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-footwear">
+                                    <a href="footwear-page.html">FOOTWEAR</a>
+                                  </li>   
+                                </ul>
+                              </div>
+                            </div>
+
+                            <div>
+                              <div class="categories-btn">
+                                <button id="brands-toggle">BRANDS</button>
+                                <ion-icon id="brands-add-category" name="add-outline"></ion-icon>
+                              </div>
+                              <div id="brands-options" class="options">
+                                <ul class="filter-category">
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-adidas">
+                                    <a href="adidas-page.html" title="Narrow selection to products matching tag vendor-adidas">Adidas</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-converse">
+                                    <a href="nike-page.html" title="Narrow selection to products matching tag vendor-Converse">Converse</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-nike">
+                                    <a href="nike-page.html" title="Narrow selection to products matching tag vendor-Nike">Nike</a>
+                                  </li>
+                                  <li class="filter-item-category">
+                                    <input class="filter-checkbox" type="checkbox" id="checkbox-vans">
+                                    <a href="vans-page.html" title="Narrow selection to products matching tag vendor-Vans">Vans</a>
+                                  </li>
+                                
+                                </ul>
+                              </div>
                             </div>
                             <div>
+                              <div class="categories-btn">
                                 <button id="size-toggle">SIZE</button>
-                                <div id="size-options" class="options">
-                                    <button>All</button>
-                                    <button>US 40</button>
-                                    <button>US 41</button>
-                                    <button>US 42</button>
-                                    <button>US 43</button>
-                                </div>
+                                <ion-icon id="size-add-category" name="add-outline"></ion-icon>
+                              </div>
+                              <div id="size-options" class="options">
+                                <ul class="filter-category-size">
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 7</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 8</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 9</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 10</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 11</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 12</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 13</button></a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <a href="#"><button>US 14</button></a>
+                                    </li>
+                                  </ul>
+                              </div>
                             </div>
                             <div>
+                              <div class="categories-btn">
                                 <button id="gender-toggle">GENDER</button>
-                                <div id="gender-options" class="options">
-                                    <button>All</button>
-                                    <button>Men</button>
-                                    <button>Women</button>
-                                    <button>Unisex</button>
-                                </div>
+                                <ion-icon id="gender-add-category" name="add-outline"></ion-icon>
+                              </div>
+                              <div id="gender-options" class="options">
+                                <ul class="filter-category">
+                                   
+                                    <li class="filter-item-category">
+                                      <input class="filter-checkbox" type="checkbox"id="checkbox-men-gender">
+                                      <a href="men-page.html" title="">MEN</a>
+                                    </li>
+                                    <li class="filter-item-category">
+                                      <input class="filter-checkbox" type="checkbox" id="checkbox-women-gender">
+                                      <a href="women-page.html" >WOMEN</a>
+                                    </li>
+                                      
+                                  </ul>
+                              </div>
                             </div>
-                        </div>
+                          </div>
                         
 
                         <div>
