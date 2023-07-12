@@ -2380,7 +2380,7 @@ a.footer-link:is(:hover, :focus) {
 .new-arrival {
   grid-template-columns: 1fr 4fr;
   text-align: left;
-  gap: 25px;
+  gap: 50px;
 }
 
 .arrival-list {
@@ -2397,9 +2397,7 @@ a.footer-link:is(:hover, :focus) {
 
 }
 
-.categories-arrival {
-  margin-top: 30px;
-}
+
 
 .new-arrival-title {
   margin-top: 60px;
@@ -2447,12 +2445,6 @@ a.footer-link:is(:hover, :focus) {
   line-height: 1.5;
 }
 
-.categories-arrival {
-  font-size: var(--fs-5);
-  font-weight: var(--fw-500);
-  line-height: 1.8;
-}
-
 .new-arrival-page {
   text-align: center;
   align-items: center;
@@ -2486,10 +2478,146 @@ a.footer-link:is(:hover, :focus) {
   color: var(--white);
 }
 
+/* Categories */
+.categories-arrival {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+  margin-top: 30px;
+}
+
+.categories-arrival button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+}
+
+.categories-arrival ion-icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(50%);
+  font-size: var(--fs-5);
+  cursor: pointer;
+  align-items: center;
+}
+
+.categories-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+#sort-available{
+  color: var(--black);
+    text-align: center;
+    padding: 5px;
+    border-radius: none;
+    outline: none;
+    border: none;
+}
+
+#sort-available select:focus{
+  outline: none;
+  border: 1px solid #8a8a8a;
+  background-color: #fefefe;
+  box-shadow: 0 0 5px #cacaca;
+  transition: box-shadow .5s,border-color .25s ease-in-out;
+}
+.filter-category {
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+  text-align: left;
+  border-radius: none;
+  outline: none;
+  border: none;
+}
+
+.filter-category ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.filter-category li {
+  display: flex;
+  align-items: center;
+
+}
+
+.filter-category li a {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-400);
+  color: rgb(61, 61, 61);
+}
+.filter-category li a:hover{
+  color: var(--purple);
+}
+.filter-checkbox {
+  width: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.filter-category-size {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--black);
+  text-align: left;
+}
+
+.filter-category-size a{
+  border: 1px solid var(--black);
+  margin-right: 5px;
+  font-size: var(--fs-8);
+  color: var(--black);
+  padding: 2px 10px 2px;
+  margin-top: 5px;
+}
+.filter-category-size a:hover{
+  color: var(--purple);
+}
+
+.options {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+  /* white-space-collapse: collapse;
+  text-wrap: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px; */
+}
+
+.options button {
+  cursor: pointer;
+  margin: 4px 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.options button:hover {
+  background-color: #f5f5f5;
+}
+
+.options.show {
+  display: block;
+}
+
+
 
 @media (max-width:768px) {
   .new-arrival {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .arrival-list {
@@ -2527,30 +2655,7 @@ a.footer-link:is(:hover, :focus) {
   }
 }
 
-.options {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 8px;
-  margin-top: 2px;
-}
 
-.options button {
-  cursor: pointer;
-  margin: 4px 0;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.options button:hover {
-  background-color: #f5f5f5;
-}
-
-.options.show {
-  display: block;
-}
 
 
 /*-----------------------------------*\
@@ -2945,7 +3050,7 @@ th:last-child {
     text-align: left;
     color: var(--white);
     text-shadow: 1px 1px 0px var(--purple);
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
   }
   .story-content
   {
@@ -3093,6 +3198,18 @@ th:last-child {
     padding: 10px;
   }
 
+  .categories-arrival ion-icon{
+    display: none;
+  }
+  .filter-category{
+    position:absolute;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+
+  }
+ 
+
+
   .cart-info p {
     display: none;
   }
@@ -3198,6 +3315,5 @@ th:last-child {
   }
   .content-container {
     gap: 10px;
-}
- 
+} 
 }
