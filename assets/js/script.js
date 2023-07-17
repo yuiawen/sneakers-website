@@ -265,9 +265,6 @@ redirectToPage("checkbox-vans", "vans-page.html");
 redirectToPage("checkbox-men-gender", "men-page.html");
 redirectToPage("checkbox-women-gender", "women-page.html");
 
-
-
-
 /* checkout alert */
 var checkoutBtn = document.getElementById("checkout-btn");
 checkoutBtn.addEventListener("click", function () {
